@@ -2,7 +2,7 @@
 @Name: run.py
 @Auth: JiangZhesheng
 @Date: 2022/9/12-18:54
-@Desc:
+@Desc: 每日运行脚本
 """
 import os
 while True:

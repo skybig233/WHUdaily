@@ -13,6 +13,8 @@ import time
 
 url="https://hall.whu.edu.cn/infoplus/form/XSCRSQ/start"
 
+
+# 单次运行请直接在下面修改参数后运行
 username="2022202110006"
 password="jzs981225"
 
@@ -20,7 +22,6 @@ info_address="圆梦美丽家园10-1-102"
 info_reason='回家'
 info_trans='586'
 info_phone='15527786655'
-
 # info_startdate='2022-09-09'
 # info_enddate='2022-09-09'
 info_startdate=time.strftime('%Y-%m-%d')
@@ -30,7 +31,7 @@ info_endtime='23:00'
 
 chrome_options=Options()
 # 浏览器后台运行
-# chrome_options.add_argument('--headless')
+chrome_options.add_argument('--headless')
 browser=webdriver.Chrome(options=chrome_options)
 
 browser.get(url)
